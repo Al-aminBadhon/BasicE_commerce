@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="bd9f2d4f28464e83942cd59e2c3aa3cf" Name="Diagram1">
+        <EntityTypeShape EntityType="basicE_commerceModel.Cart" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="basicE_commerceModel.Comment" Width="1.5" PointX="3" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="basicE_commerceModel.Customer" Width="1.5" PointX="1.5" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="basicE_commerceModel.Invoice" Width="1.5" PointX="3.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="basicE_commerceModel.Product" Width="1.5" PointX="0.75" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="basicE_commerceModel.ProductCart" Width="1.5" PointX="3" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="basicE_commerceModel.ProductInvoice" Width="1.5" PointX="6" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="basicE_commerceModel.Slider" Width="1.5" PointX="5.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="basicE_commerceModel.sysdiagram" Width="1.5" PointX="7.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="basicE_commerceModel.Transition" Width="1.5" PointX="6" PointY="8.5" IsExpanded="true" />
+        <AssociationConnector Association="basicE_commerceModel.FK_Cart_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="basicE_commerceModel.FK_ProductCart_Cart" ManuallyRouted="false" />
+        <AssociationConnector Association="basicE_commerceModel.FK_Comment_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="basicE_commerceModel.FK_Comment_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="basicE_commerceModel.FK_Invoice_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="basicE_commerceModel.FK_ProductInvoice_Invoice" ManuallyRouted="false" />
+        <AssociationConnector Association="basicE_commerceModel.FK_Transition_Invoice" ManuallyRouted="false" />
+        <AssociationConnector Association="basicE_commerceModel.FK_ProductCart_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="basicE_commerceModel.FK_ProductInvoice_Product" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

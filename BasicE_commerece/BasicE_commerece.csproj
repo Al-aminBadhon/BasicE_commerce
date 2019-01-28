@@ -16,7 +16,8 @@
     <AssemblyName>BasicE_commerece</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
-    <Use64BitIISExpress />
+    <Use64BitIISExpress>
+    </Use64BitIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -144,6 +145,8 @@
     <Content Include="Content\chart.js\src\Chart.Line.js" />
     <Content Include="Content\chart.js\src\Chart.PolarArea.js" />
     <Content Include="Content\chart.js\src\Chart.Radar.js" />
+    <Content Include="Content\css\home.css" />
+    <Content Include="Content\css\style.css" />
     <Content Include="Content\dist\css\AdminLTE.css" />
     <Content Include="Content\dist\css\AdminLTE.min.css" />
     <Content Include="Content\dist\css\alt\AdminLTE-bootstrap-social.css" />
@@ -217,6 +220,54 @@
     <Content Include="Content\font-awesome\css\font-awesome.min.css" />
     <Content Include="Content\font-awesome\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\font-awesome\HELP-US-OUT.txt" />
+    <Content Include="Content\images\avater.jpg" />
+    <Content Include="Content\images\blog\avater-1.jpg" />
+    <Content Include="Content\images\blog\avater-2.jpg" />
+    <Content Include="Content\images\blog\avater-3.jpg" />
+    <Content Include="Content\images\blog\avater-4.jpg" />
+    <Content Include="Content\images\blog\blog-post-1.jpg" />
+    <Content Include="Content\images\blog\blog-post-2.jpg" />
+    <Content Include="Content\images\blog\blog-post-3.jpg" />
+    <Content Include="Content\images\blog\blog-post-4.jpg" />
+    <Content Include="Content\images\blog\blog-post-5.jpg" />
+    <Content Include="Content\images\blog\blog-post-6.jpg" />
+    <Content Include="Content\images\blog\post-thumb-2.jpg" />
+    <Content Include="Content\images\blog\post-thumb-3.jpg" />
+    <Content Include="Content\images\blog\post-thumb-4.jpg" />
+    <Content Include="Content\images\blog\post-thumb-5.jpg" />
+    <Content Include="Content\images\blog\post-thumb-6.jpg" />
+    <Content Include="Content\images\blog\post-thumb-7.jpg" />
+    <Content Include="Content\images\blog\post-thumb.jpg" />
+    <Content Include="Content\images\favicon.png" />
+    <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\shop\cart\cart-1.jpg" />
+    <Content Include="Content\images\shop\cart\cart-2.jpg" />
+    <Content Include="Content\images\shop\cart\cart-3.jpg" />
+    <Content Include="Content\images\shop\category\category-1.jpg" />
+    <Content Include="Content\images\shop\category\category-2.jpg" />
+    <Content Include="Content\images\shop\category\category-3.jpg" />
+    <Content Include="Content\images\shop\header-img.jpg" />
+    <Content Include="Content\images\shop\products\modal-product.jpg" />
+    <Content Include="Content\images\shop\products\product-1.jpg" />
+    <Content Include="Content\images\shop\products\product-2.jpg" />
+    <Content Include="Content\images\shop\products\product-3.jpg" />
+    <Content Include="Content\images\shop\products\product-4.jpg" />
+    <Content Include="Content\images\shop\products\product-5.jpg" />
+    <Content Include="Content\images\shop\products\product-6.jpg" />
+    <Content Include="Content\images\shop\products\product-7.jpg" />
+    <Content Include="Content\images\shop\products\product-8.jpg" />
+    <Content Include="Content\images\shop\products\product-9.jpg" />
+    <Content Include="Content\images\shop\products\single-product.jpg" />
+    <Content Include="Content\images\shop\single-products\product-1.jpg" />
+    <Content Include="Content\images\shop\single-products\product-2.jpg" />
+    <Content Include="Content\images\shop\single-products\product-3.jpg" />
+    <Content Include="Content\images\shop\single-products\product-4.jpg" />
+    <Content Include="Content\images\shop\single-products\product-5.jpg" />
+    <Content Include="Content\images\shop\single-products\product-6.jpg" />
+    <Content Include="Content\images\shop\verified.png" />
+    <Content Include="Content\images\slider\slider-1.jpg" />
+    <Content Include="Content\images\slider\slider-2.jpg" />
+    <Content Include="Content\images\slider\slider-3.jpg" />
     <Content Include="Content\Ionicons\cheatsheet.html" />
     <Content Include="Content\Ionicons\css\ionicons.css" />
     <Content Include="Content\Ionicons\css\ionicons.min.css" />
@@ -1714,6 +1765,7 @@
     <Content Include="Content\jquery\src\var\support.js" />
     <Content Include="Content\jquery\src\var\toString.js" />
     <Content Include="Content\jquery\src\wrap.js" />
+    <Content Include="Content\js\script.js" />
     <Content Include="Content\jvectormap\.gitignore" />
     <Content Include="Content\jvectormap\jquery-jvectormap.css" />
     <Content Include="Content\jvectormap\jquery-jvectormap.js" />
@@ -1963,17 +2015,93 @@
     <Content Include="Content\plugins\timepicker\bootstrap-timepicker.js" />
     <Content Include="Content\plugins\timepicker\bootstrap-timepicker.min.css" />
     <Content Include="Content\plugins\timepicker\bootstrap-timepicker.min.js" />
+    <Content Include="Content\Website\css\home.css" />
+    <Content Include="Content\Website\css\style.css" />
+    <Content Include="Content\Website\images\avater.jpg" />
+    <Content Include="Content\Website\images\blog\avater-1.jpg" />
+    <Content Include="Content\Website\images\blog\avater-2.jpg" />
+    <Content Include="Content\Website\images\blog\avater-3.jpg" />
+    <Content Include="Content\Website\images\blog\avater-4.jpg" />
+    <Content Include="Content\Website\images\blog\blog-post-1.jpg" />
+    <Content Include="Content\Website\images\blog\blog-post-2.jpg" />
+    <Content Include="Content\Website\images\blog\blog-post-3.jpg" />
+    <Content Include="Content\Website\images\blog\blog-post-4.jpg" />
+    <Content Include="Content\Website\images\blog\blog-post-5.jpg" />
+    <Content Include="Content\Website\images\blog\blog-post-6.jpg" />
+    <Content Include="Content\Website\images\blog\post-thumb-2.jpg" />
+    <Content Include="Content\Website\images\blog\post-thumb-3.jpg" />
+    <Content Include="Content\Website\images\blog\post-thumb-4.jpg" />
+    <Content Include="Content\Website\images\blog\post-thumb-5.jpg" />
+    <Content Include="Content\Website\images\blog\post-thumb-6.jpg" />
+    <Content Include="Content\Website\images\blog\post-thumb-7.jpg" />
+    <Content Include="Content\Website\images\blog\post-thumb.jpg" />
+    <Content Include="Content\Website\images\favicon.png" />
+    <Content Include="Content\Website\images\logo.png" />
+    <Content Include="Content\Website\images\shop\cart\cart-1.jpg" />
+    <Content Include="Content\Website\images\shop\cart\cart-2.jpg" />
+    <Content Include="Content\Website\images\shop\cart\cart-3.jpg" />
+    <Content Include="Content\Website\images\shop\category\category-1.jpg" />
+    <Content Include="Content\Website\images\shop\category\category-2.jpg" />
+    <Content Include="Content\Website\images\shop\category\category-3.jpg" />
+    <Content Include="Content\Website\images\shop\header-img.jpg" />
+    <Content Include="Content\Website\images\shop\products\modal-product.jpg" />
+    <Content Include="Content\Website\images\shop\products\product-1.jpg" />
+    <Content Include="Content\Website\images\shop\products\product-2.jpg" />
+    <Content Include="Content\Website\images\shop\products\product-3.jpg" />
+    <Content Include="Content\Website\images\shop\products\product-4.jpg" />
+    <Content Include="Content\Website\images\shop\products\product-5.jpg" />
+    <Content Include="Content\Website\images\shop\products\product-6.jpg" />
+    <Content Include="Content\Website\images\shop\products\product-7.jpg" />
+    <Content Include="Content\Website\images\shop\products\product-8.jpg" />
+    <Content Include="Content\Website\images\shop\products\product-9.jpg" />
+    <Content Include="Content\Website\images\shop\products\single-product.jpg" />
+    <Content Include="Content\Website\images\shop\single-products\product-1.jpg" />
+    <Content Include="Content\Website\images\shop\single-products\product-2.jpg" />
+    <Content Include="Content\Website\images\shop\single-products\product-3.jpg" />
+    <Content Include="Content\Website\images\shop\single-products\product-4.jpg" />
+    <Content Include="Content\Website\images\shop\single-products\product-5.jpg" />
+    <Content Include="Content\Website\images\shop\single-products\product-6.jpg" />
+    <Content Include="Content\Website\images\shop\verified.png" />
+    <Content Include="Content\Website\images\slider\1.jpg" />
+    <Content Include="Content\Website\images\slider\2.jpg" />
+    <Content Include="Content\Website\images\slider\3.jpg" />
+    <Content Include="Content\Website\images\slider\slider-1.jpg" />
+    <Content Include="Content\Website\images\slider\slider-2.jpg" />
+    <Content Include="Content\Website\images\slider\slider-3.jpg" />
+    <Content Include="Content\Website\js\script.js" />
+    <Content Include="Content\Website\plugins\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Content\Website\plugins\bootstrap\js\bootstrap.js" />
+    <Content Include="Content\Website\plugins\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Content\Website\plugins\instafeed.js\instafeed.js" />
+    <Content Include="Content\Website\plugins\instafeed.js\instafeed.min.js" />
+    <Content Include="Content\Website\plugins\jquery\dist\core.js" />
+    <Content Include="Content\Website\plugins\jquery\dist\jquery.js" />
+    <Content Include="Content\Website\plugins\jquery\dist\jquery.min.js" />
+    <Content Include="Content\Website\plugins\jquery\dist\jquery.slim.js" />
+    <Content Include="Content\Website\plugins\jquery\dist\jquery.slim.min.js" />
+    <Content Include="Content\Website\plugins\slick-carousel\slick\ajax-loader.gif" />
+    <Content Include="Content\Website\plugins\slick-carousel\slick\fonts\slick.svg" />
+    <Content Include="Content\Website\plugins\slick-carousel\slick\slick-theme.css" />
+    <Content Include="Content\Website\plugins\slick-carousel\slick\slick.css" />
+    <Content Include="Content\Website\plugins\slick-carousel\slick\slick.js" />
+    <Content Include="Content\Website\plugins\slick-carousel\slick\slick.min.js" />
+    <Content Include="Content\Website\plugins\themefisher-font\demo-files\demo.css" />
+    <Content Include="Content\Website\plugins\themefisher-font\demo-files\demo.js" />
+    <Content Include="Content\Website\plugins\themefisher-font\demo.html" />
+    <Content Include="Content\Website\plugins\themefisher-font\fonts\themefisher-font.svg" />
+    <Content Include="Content\Website\plugins\themefisher-font\Read Me.txt" />
+    <Content Include="Content\Website\plugins\themefisher-font\style.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Models\BasicE_commerceModel.Context.tt">
+    <Content Include="Models\Model.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BasicE_commerceModel.edmx</DependentUpon>
-      <LastGenOutput>BasicE_commerceModel.Context.cs</LastGenOutput>
+      <DependentUpon>Model.edmx</DependentUpon>
+      <LastGenOutput>Model.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\BasicE_commerceModel.tt">
+    <Content Include="Models\Model.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BasicE_commerceModel.edmx</DependentUpon>
-      <LastGenOutput>BasicE_commerceModel.cs</LastGenOutput>
+      <DependentUpon>Model.edmx</DependentUpon>
+      <LastGenOutput>Model.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -2190,12 +2318,38 @@
     <Content Include="Content\dist\css\adminlte.min.css.map" />
     <Content Include="Content\plugins\input-mask\phone-codes\phone-be.json" />
     <Content Include="Content\plugins\input-mask\phone-codes\phone-codes.json" />
-    <EntityDeploy Include="Models\BasicE_commerceModel.edmx">
+    <Content Include="Content\css\maps\home.css.map" />
+    <Content Include="Content\css\maps\style.css.map" />
+    <Content Include="Content\Website\css\maps\home.css.map" />
+    <Content Include="Content\Website\css\maps\style.css.map" />
+    <Content Include="Content\Website\plugins\instafeed.js\bower.json" />
+    <Content Include="Content\Website\plugins\instafeed.js\README.md" />
+    <Content Include="Content\Website\plugins\jquery\dist\jquery.min.map" />
+    <Content Include="Content\Website\plugins\jquery\dist\jquery.slim.min.map" />
+    <Content Include="Content\Website\plugins\slick-carousel\bower.json" />
+    <Content Include="Content\Website\plugins\slick-carousel\component.json" />
+    <Content Include="Content\Website\plugins\slick-carousel\CONTRIBUTING.markdown" />
+    <Content Include="Content\Website\plugins\slick-carousel\ISSUE_TEMPLATE.md" />
+    <Content Include="Content\Website\plugins\slick-carousel\README.markdown" />
+    <Content Include="Content\Website\plugins\slick-carousel\slick.jquery.json" />
+    <Content Include="Content\Website\plugins\slick-carousel\slick\config.rb" />
+    <Content Include="Content\Website\plugins\slick-carousel\slick\fonts\slick.eot" />
+    <Content Include="Content\Website\plugins\slick-carousel\slick\fonts\slick.ttf" />
+    <Content Include="Content\Website\plugins\slick-carousel\slick\fonts\slick.woff" />
+    <Content Include="Content\Website\plugins\slick-carousel\slick\slick-theme.less" />
+    <Content Include="Content\Website\plugins\slick-carousel\slick\slick-theme.scss" />
+    <Content Include="Content\Website\plugins\slick-carousel\slick\slick.less" />
+    <Content Include="Content\Website\plugins\slick-carousel\slick\slick.scss" />
+    <Content Include="Content\Website\plugins\themefisher-font\fonts\themefisher-font.eot" />
+    <Content Include="Content\Website\plugins\themefisher-font\fonts\themefisher-font.ttf" />
+    <Content Include="Content\Website\plugins\themefisher-font\fonts\themefisher-font.woff" />
+    <Content Include="Content\Website\plugins\themefisher-font\selection.json" />
+    <EntityDeploy Include="Models\Model.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>BasicE_commerceModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>Model.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\BasicE_commerceModel.edmx.diagram">
-      <DependentUpon>BasicE_commerceModel.edmx</DependentUpon>
+    <Content Include="Models\Model.edmx.diagram">
+      <DependentUpon>Model.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -2206,54 +2360,55 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\WebsiteController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\BasicE_commerceModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BasicE_commerceModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\BasicE_commerceModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BasicE_commerceModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\BasicE_commerceModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BasicE_commerceModel.edmx</DependentUpon>
-    </Compile>
     <Compile Include="Models\Cart.cs">
-      <DependentUpon>BasicE_commerceModel.tt</DependentUpon>
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Comment.cs">
-      <DependentUpon>BasicE_commerceModel.tt</DependentUpon>
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Customer.cs">
-      <DependentUpon>BasicE_commerceModel.tt</DependentUpon>
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Extended\Product.cs" />
     <Compile Include="Models\Invoice.cs">
-      <DependentUpon>BasicE_commerceModel.tt</DependentUpon>
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\Product.cs">
-      <DependentUpon>BasicE_commerceModel.tt</DependentUpon>
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ProductCart.cs">
-      <DependentUpon>BasicE_commerceModel.tt</DependentUpon>
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ProductInvoice.cs">
-      <DependentUpon>BasicE_commerceModel.tt</DependentUpon>
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Slider.cs">
-      <DependentUpon>BasicE_commerceModel.tt</DependentUpon>
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\sysdiagram.cs">
-      <DependentUpon>BasicE_commerceModel.tt</DependentUpon>
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Transition.cs">
-      <DependentUpon>BasicE_commerceModel.tt</DependentUpon>
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -2271,6 +2426,8 @@
     <Content Include="Views\Home\ProductAdd.cshtml" />
     <Content Include="Views\Home\Comment.cshtml" />
     <Content Include="Views\Home\Slider.cshtml" />
+    <Content Include="Views\Shared\_WebsiteLayout.cshtml" />
+    <Content Include="Views\Website\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -2280,6 +2437,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Image\" />
+    <Folder Include="Views\HttpPostedFileBase\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

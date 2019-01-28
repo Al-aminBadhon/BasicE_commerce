@@ -16,12 +16,12 @@ namespace BasicE_commerece.Models
 
 
         [Required]
-        [RegularExpression("(a-zA-Z)*")]
+        
         public string Name { get; set; }
         [Required]
         public string Description { get; set; }
         [Required]
-        public byte[] Image { get; set; }
+        public string Image { get; set; }
         [Required]
         public int Stock { get; set; }
         [Required]

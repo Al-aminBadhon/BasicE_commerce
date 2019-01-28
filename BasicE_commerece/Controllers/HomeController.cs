@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.IO;
 
 
 namespace BasicE_commerece.Controllers
@@ -12,8 +13,8 @@ namespace BasicE_commerece.Controllers
     {
         // GET: Home
 
-        basicE_commerceEntities1 db = new basicE_commerceEntities1();
-
+        basicE_commerceEntities2 db = new basicE_commerceEntities2();
+       
         public ActionResult Index()
         {
             return View();
@@ -29,17 +30,33 @@ namespace BasicE_commerece.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult ProductAdd([Bind(Include ="Id,Name,Description,Image,Stock,Price" )]Product product)
+        public ActionResult ProductAdd([Bind(Include = "Name,Description,Image,Stock,Price")]Product product, HttpPostedFileBase image1)
         {
+         
 
-            if (ModelState.IsValid)
+            if (image1 != null)
             {
-                db.Products.Add(product);
-                db.SaveChanges();
-                return RedirectToAction("Product");
-            }
-           
-                return View();
+            string imagename = Path.GetFileNameWithoutExtension(image1.FileName);
+            string extension = Path.GetExtension(image1.FileName);
+            imagename = imagename + DateTime.Now.ToString("yymmssfff") + extension;
+            product.Image = "~/Image/" + imagename;
+            imagename = Path.Combine(Server.MapPath("~/Image/"), imagename);
+            image1.SaveAs(imagename);
+
+
+                if (ModelState.IsValid)
+                {
+
+
+                    db.Products.Add(product);
+                    db.SaveChanges();
+                    return RedirectToAction("Product");
+                }
+                }
+
+
+
+            return View();
         }
         public ActionResult Slider()
         {
@@ -49,6 +66,13 @@ namespace BasicE_commerece.Controllers
         public ActionResult Comment()
         {
             return View(db.Comments.ToList());
+        }
+
+
+        //test 
+        public ActionResult Test()
+        {
+            return View();
         }
     }
 
