@@ -13,7 +13,7 @@ namespace BasicE_commerece.Controllers
     {
         // GET: Home
 
-        basicE_commerceEntities2 db = new basicE_commerceEntities2();
+        basicE_commerceEntities3 db = new basicE_commerceEntities3();
        
         public ActionResult Index()
         {
@@ -43,24 +43,49 @@ namespace BasicE_commerece.Controllers
             imagename = Path.Combine(Server.MapPath("~/Image/"), imagename);
             image1.SaveAs(imagename);
 
+                db.Products.Add(product);
+                
 
-                if (ModelState.IsValid)
-                {
 
-
-                    db.Products.Add(product);
+                   
                     db.SaveChanges();
                     return RedirectToAction("Product");
-                }
-                }
+                
+            }
 
 
 
             return View();
         }
+        
         public ActionResult Slider()
         {
             return View(db.Sliders.ToList());
+        }
+        [HttpGet]
+        public ActionResult SliderAdd()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult SliderAdd([Bind(Include = "Name,Image,SliderText,IsActive")] Slider slider, Slider imagemodel)
+        {
+            if (imagemodel != null)
+            {
+                String fileName = Path.GetFileNameWithoutExtension(imagemodel.ImageFile.FileName);
+                String extension = Path.GetExtension(imagemodel.ImageFile.FileName);
+                fileName = fileName + DateTime.Now.ToString("yymmssfff") + extension;
+                slider.Image = "~/Image/" + imagemodel;
+                fileName = Path.Combine(Server.MapPath("~/Image/"), fileName);
+                imagemodel.ImageFile.SaveAs(fileName);
+
+                db.Sliders.Add(slider);
+
+                db.SaveChanges();
+                ModelState.Clear();
+                return RedirectToAction("Slider");
+            }
+            return View();
         }
 
         public ActionResult Comment()

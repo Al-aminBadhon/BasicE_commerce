@@ -11,9 +11,7 @@ namespace BasicE_commerece.Models
 {
     using System;
     using System.Collections.Generic;
-    using System.Web;
-    using System.IO;
-
+    
     public partial class Product
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -37,7 +35,5 @@ namespace BasicE_commerece.Models
         public virtual ICollection<ProductCart> ProductCarts { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ProductInvoice> ProductInvoices { get; set; }
-
-       //public HttpPostedFileBase Image1 { get; set; }
     }
 }

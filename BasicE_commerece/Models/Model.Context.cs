@@ -13,10 +13,10 @@ namespace BasicE_commerece.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class basicE_commerceEntities2 : DbContext
+    public partial class basicE_commerceEntities3 : DbContext
     {
-        public basicE_commerceEntities2()
-            : base("name=basicE_commerceEntities2")
+        public basicE_commerceEntities3()
+            : base("name=basicE_commerceEntities3")
         {
         }
     

@@ -11,13 +11,17 @@ namespace BasicE_commerece.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.Web;
+
     public partial class Slider
     {
         public int SliderId { get; set; }
-        public byte[] Image { get; set; }
+        
+        public string Image { get; set; }
         public string Name { get; set; }
         public string SliderText { get; set; }
-        public Nullable<bool> IsActive { get; set; }
+        public bool IsActive { get; set; }
+
+        public HttpPostedFileBase ImageFile { get; set; }
     }
 }

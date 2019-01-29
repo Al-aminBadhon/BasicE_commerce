@@ -83,10 +83,10 @@
             <PropertyRef Name="SliderId" />
           </Key>
           <Property Name="SliderId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Image" Type="image" Nullable="false" />
+          <Property Name="Image" Type="varchar(max)" Nullable="false" />
           <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="SliderText" Type="varchar" MaxLength="100" Nullable="false" />
-          <Property Name="IsActive" Type="bit" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
         </EntityType>
         <EntityType Name="sysdiagrams">
           <Key>
@@ -366,10 +366,10 @@
             <PropertyRef Name="SliderId" />
           </Key>
           <Property Name="SliderId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Image" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+          <Property Name="Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="SliderText" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
         </EntityType>
         <EntityType Name="sysdiagram">
           <Key>
@@ -502,7 +502,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="basicE_commerceEntities2" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="basicE_commerceEntities3" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Carts" EntityType="Self.Cart" />
           <EntitySet Name="Comments" EntityType="Self.Comment" />
           <EntitySet Name="Customers" EntityType="Self.Customer" />
@@ -555,7 +555,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="basicE_commerceModelStoreContainer" CdmEntityContainer="basicE_commerceEntities2">
+        <EntityContainerMapping StorageEntityContainer="basicE_commerceModelStoreContainer" CdmEntityContainer="basicE_commerceEntities3">
           <EntitySetMapping Name="Carts">
             <EntityTypeMapping TypeName="basicE_commerceModel.Cart">
               <MappingFragment StoreEntitySet="Cart">
