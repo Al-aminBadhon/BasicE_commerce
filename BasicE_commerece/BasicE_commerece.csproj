@@ -2093,6 +2093,53 @@
     <Content Include="Content\Website\plugins\themefisher-font\style.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Image\Capture1190300010.PNG" />
+    <Content Include="Image\Capture1191127351.PNG" />
+    <Content Include="Image\Capture1191156606.PNG" />
+    <Content Include="Image\Capture1191414422.PNG" />
+    <Content Include="Image\Capture1192719427.PNG" />
+    <Content Include="Image\Capture1193722649.PNG" />
+    <Content Include="Image\Capture1193819283.PNG" />
+    <Content Include="Image\Capture1193833169.PNG" />
+    <Content Include="Image\Capture1193944642.PNG" />
+    <Content Include="Image\Capture1194509541.PNG" />
+    <Content Include="Image\Capture190514559.PNG" />
+    <Content Include="Image\Capture190937885.PNG" />
+    <Content Include="Image\Capture191055749.PNG" />
+    <Content Include="Image\Capture191056768.PNG" />
+    <Content Include="Image\Capture191057455.PNG" />
+    <Content Include="Image\Capture193110910.PNG" />
+    <Content Include="Image\Capture193200122.PNG" />
+    <Content Include="Image\Capture193220438.PNG" />
+    <Content Include="Image\Capture193227983.PNG" />
+    <Content Include="Image\Capture193231440.PNG" />
+    <Content Include="Image\Capture194035569.PNG" />
+    <Content Include="Image\Capture194302943.PNG" />
+    <Content Include="Image\Capture194439746.PNG" />
+    <Content Include="Image\Capture194949851.PNG" />
+    <Content Include="Image\Capture195309657.PNG" />
+    <Content Include="Image\Capture195519400.PNG" />
+    <Content Include="Image\Capture195644116.PNG" />
+    <Content Include="Image\Capture195752115.PNG" />
+    <Content Include="Image\cdk85190048746.png" />
+    <Content Include="Image\cdk85190956301.png" />
+    <Content Include="Image\cdk85190956948.png" />
+    <Content Include="Image\cdk85191108485.png" />
+    <Content Include="Image\cdk85191234104.png" />
+    <Content Include="Image\cdk85191443623.png" />
+    <Content Include="Image\cdk85193519343.png" />
+    <Content Include="Image\cdk85194032782.png" />
+    <Content Include="Image\cdk85194116342.png" />
+    <Content Include="Image\cdk85194302488.png" />
+    <Content Include="Image\cdk85194328087.png" />
+    <Content Include="Image\cdk85194445891.png" />
+    <Content Include="Image\cdk85194552612.png" />
+    <Content Include="Image\cdk85194710529.png" />
+    <Content Include="Image\cdk85194726130.png" />
+    <Content Include="Image\cdk85195044552.png" />
+    <Content Include="Image\cdk85195433816.png" />
+    <Content Include="Image\cdk85195554087.png" />
+    <Content Include="Image\today is every thing by pcbots193125963.jpg" />
     <Content Include="Models\Model.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model.edmx</DependentUpon>
@@ -2439,7 +2486,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Image\" />
     <Folder Include="Views\HttpPostedFileBase\" />
   </ItemGroup>
   <ItemGroup>

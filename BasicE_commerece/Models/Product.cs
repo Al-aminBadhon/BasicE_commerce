@@ -28,6 +28,7 @@ namespace BasicE_commerece.Models
         public string Image { get; set; }
         public int Stock { get; set; }
         public double Price { get; set; }
+        
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Comment> Comments { get; set; }

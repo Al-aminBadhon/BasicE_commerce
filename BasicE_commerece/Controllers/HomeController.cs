@@ -22,6 +22,9 @@ namespace BasicE_commerece.Controllers
 
         public ActionResult Product()
         {
+            List<Product> products = db.Products.ToList();
+            ViewBag.Products = products;
+
             return View(db.Products.ToList());
         }
         [HttpGet]
@@ -39,17 +42,14 @@ namespace BasicE_commerece.Controllers
             string imagename = Path.GetFileNameWithoutExtension(image1.FileName);
             string extension = Path.GetExtension(image1.FileName);
             imagename = imagename + DateTime.Now.ToString("yymmssfff") + extension;
-            product.Image = "~/Image/" + imagename;
+            product.Image = "/Image/" + imagename;
             imagename = Path.Combine(Server.MapPath("~/Image/"), imagename);
             image1.SaveAs(imagename);
 
                 db.Products.Add(product);
-                
-
-
-                   
-                    db.SaveChanges();
-                    return RedirectToAction("Product");
+                db.SaveChanges();
+                ModelState.Clear();
+                return RedirectToAction("Product");
                 
             }
 
