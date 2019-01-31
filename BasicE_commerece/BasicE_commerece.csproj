@@ -2477,6 +2477,7 @@
     <Content Include="Views\Website\Index.cshtml" />
     <Content Include="Views\Home\SliderAdd.cshtml" />
     <Content Include="Views\Home\Slider.cshtml" />
+    <Content Include="Views\Website\SinglePageVew.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

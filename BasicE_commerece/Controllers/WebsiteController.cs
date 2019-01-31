@@ -16,10 +16,15 @@ namespace BasicE_commerece.Controllers
 
         public ActionResult Index()
         {
+            List<Product> products = db.Products.ToList();
+            ViewBag.Products = products;
 
-            return View(db.Products.ToList());
+            
+
+
+            return View();
         }
-        public ActionResult HomeView()
+        public ActionResult SinglePageVew()
         {
             return View();
         }

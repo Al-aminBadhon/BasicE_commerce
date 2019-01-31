@@ -22,8 +22,7 @@ namespace BasicE_commerece.Controllers
 
         public ActionResult Product()
         {
-            List<Product> products = db.Products.ToList();
-            ViewBag.Products = products;
+            
 
             return View(db.Products.ToList());
         }
