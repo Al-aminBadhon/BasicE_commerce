@@ -47,7 +47,7 @@
                 <div class="col-md-4 col-xs-12 col-sm-4">
                     <!-- Site Logo -->
                     <div class="logo text-center">
-                        <a href="index.html">
+                        <a href="~/Website/Index">
                             <!-- replace logo here -->
                             <svg width="135px" height="29px" viewBox="0 0 155 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-size="40" font-family="AustinBold, Austin" font-weight="bold">
@@ -147,7 +147,7 @@
                     <ul class="nav navbar-nav">
                         <!-- Home -->
                         <li class="dropdown ">
-                            <a href="index.html">Home</a>
+                            <a href="~/Website/Index">Home</a>
                         </li><!-- / Home -->
                         <!-- Elements -->
                         <li>
@@ -209,7 +209,7 @@
                     <div class="slide-inner text-center">
                         <h1></h1>
                         <p> <br></p>
-                        
+
                     </div>
                 </div>
             </div>
@@ -240,8 +240,10 @@
                 {
                     <div class="col-md-6">
                         <div class="category-box">
-                            <a href="">
-                                <img src="@item.Image"/>
+
+
+                            <a href="~/Website/SinglePageView">
+                                <img src="@item.Image" />
                                 @*<img src="~/Content/Website/images/shop/category/category-1.jpg" alt="" />*@
                                 <div class="content">
                                     <h3>Clothes Sales</h3>
@@ -270,23 +272,27 @@
                         <div class="product-item">
                             <div class="product-thumb">
                                 
-                                <img src="@item.Image" height="500" width="500" />
-                                @*<img class="img-responsive" src="~/Content/Website/images/shop/products/product-1.jpg" alt="product-img" />*@
-                                <div class="preview-meta">
-                                    <ul>
-                                        <li>
-                                            <span data-toggle="modal" data-target="#product-modal">
-                                                <i class="tf-ion-ios-search-strong"></i>
-                                            </span>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="tf-ion-ios-heart"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href=""><i class="tf-ion-android-cart"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
+
+                                <a href="~/Website/SinglePageView">
+                                    <img src="@item.Image" height="500" width="500" />
+                                    @*<img class="img-responsive" src="~/Content/Website/images/shop/products/product-1.jpg" alt="product-img" />*@
+                                    <div class="preview-meta">
+                                        <ul>
+                                            <li>
+                                                <span data-toggle="modal" data-target="#product-modal">
+                                                    <i class="tf-ion-ios-search-strong"></i>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="tf-ion-ios-heart"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i class="tf-ion-android-cart"></i></a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </a>
                             </div>
                             <div class="product-content">
                                 <h4><a>@item.Description</a></h4>
@@ -295,7 +301,7 @@
                         </div>
                     </div>
                 }
-               
+
             </div>
         </div>
     </section>
@@ -383,7 +389,7 @@
             </div>
         </div>
     </footer>
-    
+
 
     <!--
     Essential Scripts
