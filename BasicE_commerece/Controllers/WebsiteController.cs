@@ -26,6 +26,8 @@ namespace BasicE_commerece.Controllers
         }
         public ActionResult SinglePageVew()
         {
+            List<Product> products = db.Products.ToList();
+            ViewBag.Products = products;
             return View();
         }
     }

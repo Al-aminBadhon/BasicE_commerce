@@ -228,9 +228,9 @@
                         <p class="product-price">$300</p>
 
                         <p class="product-description mt-20">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum ipsum dicta quod, quia doloremque aut deserunt commodi quis. Totam a consequatur beatae nostrum, earum consequuntur? Eveniet consequatur ipsum dicta recusandae.
+                            Details
                         </p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, velit, sunt temporibus, nulla accusamus similique sapiente tempora, at atque cumque assumenda minus asperiores est esse sequi dolore magnam. Debitis, explicabo.</p>
+                        <p>details</p>
                         <div class="color-swatches">
                             <span>color:</span>
                             <ul>
@@ -245,15 +245,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="product-size">
-                            <span>Size:</span>
-                            <select class="form-control">
-                                <option>S</option>
-                                <option>M</option>
-                                <option>L</option>
-                                <option>XL</option>
-                            </select>
-                        </div>
+                       
                         <div class="product-quantity">
                             <span>Quantity:</span>
                             <div class="product-quantity-slider">
@@ -281,8 +273,7 @@
                         <div class="tab-content patternbg">
                             <div id="details" class="tab-pane fade active in">
                                 <h4>Product Description</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut per spici</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis delectus quidem repudiandae veniam distinctio repellendus magni pariatur molestiae asperiores animi, eos quod iusto hic doloremque iste a, nisi iure at unde molestias enim fugit, nulla voluptatibus. Deserunt voluptate tempora aut illum harum, deleniti laborum animi neque, praesentium explicabo, debitis ipsa?</p>
+                                <p></p>
                             </div>
                             <div id="reviews" class="tab-pane fade">
                                 <div class="post-comments">
@@ -302,7 +293,7 @@
                                                     <a class="comment-button" href="#"><i class="tf-ion-chatbubbles"></i>Reply</a>
                                                 </div>
                                                 <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at magna ut ante eleifend eleifend.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod laborum minima, reprehenderit laboriosam officiis praesentium? Impedit minus provident assumenda quae.
+                                                   Details
                                                 </p>
                                             </div>
                                         </li>
@@ -320,9 +311,7 @@
                                                     <time datetime="2013-04-06T13:53">July 02, 2015, at 11:34</time>
                                                     <a class="comment-button" href="#"><i class="tf-ion-chatbubbles"></i>Reply</a>
                                                 </div>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at magna ut ante eleifend eleifend. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni natus, nostrum iste non delectus atque ab a accusantium optio, dolor!
-                                                </p>
+                                                <p>Reviews</p>
                                             </div>
                                         </li>
                                         <!-- End Comment Item -->
@@ -339,9 +328,7 @@
                                                     <time datetime="2013-04-06T13:53">July 02, 2015, at 11:34</time>
                                                     <a class="comment-button" href="#"><i class="tf-ion-chatbubbles"></i>Reply</a>
                                                 </div>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at magna ut ante eleifend eleifend.
-                                                </p>
+                                                 <p>Reviews</p>
                                             </div>
                                         </li>
                                     </ul>
@@ -361,111 +348,29 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3">
-                    <div class="product-item">
-                        <div class="product-thumb">
-                            <span class="bage">Sale</span>
-                            <img class="img-responsive" src="~/Content/Website/images/shop/products/product-5.jpg" alt="product-img" />
-                            <div class="preview-meta">
-                                <ul>
-                                    <li>
-                                        <span data-toggle="modal" data-target="#product-modal">
-                                            <i class="tf-ion-ios-search"></i>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="tf-ion-ios-heart"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href=""><i class="tf-ion-android-cart"></i></a>
-                                    </li>
-                                </ul>
+                @foreach (var item in ViewBag.Products)
+                {
+                    <div class="col-md-6">
+                        <div class="category-box">
+
+
+                            <a href="~/Website/SinglePageView">
+                                <img src="@item.Image" />
+                               
+                                <div class="content">
+                                    <h3>Clothes Sales</h3>
+                                    <p>Shop New Season Clothing</p>
+                                </div>
+                            </a>
+                            <div class="product-content">
+                                <h4><a>@item.Description</a></h4>
+                                <p>tk @item.Price</p>
                             </div>
                         </div>
-                        <div class="product-content">
-                            <h4><a href="product-single.html">Reef Boardsport</a></h4>
-                            <p class="price">$200</p>
-                        </div>
+
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="product-item">
-                        <div class="product-thumb">
-                            <img class="img-responsive" src="~/Content/Website/images/shop/products/product-1.jpg" alt="product-img" />
-                            <div class="preview-meta">
-                                <ul>
-                                    <li>
-                                        <span data-toggle="modal" data-target="#product-modal">
-                                            <i class="tf-ion-ios-search-strong"></i>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="tf-ion-ios-heart"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href=""><i class="tf-ion-android-cart"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-content">
-                            <h4><a href="product-single.html">Rainbow Shoes</a></h4>
-                            <p class="price">$200</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="product-item">
-                        <div class="product-thumb">
-                            <img class="img-responsive" src="~/Content/Website/images/shop/products/product-2.jpg" alt="product-img" />
-                            <div class="preview-meta">
-                                <ul>
-                                    <li>
-                                        <span data-toggle="modal" data-target="#product-modal">
-                                            <i class="tf-ion-ios-search"></i>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="tf-ion-ios-heart"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href=""><i class="tf-ion-android-cart"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-content">
-                            <h4><a href="product-single.html">Strayhorn SP</a></h4>
-                            <p class="price">$230</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="product-item">
-                        <div class="product-thumb">
-                            <img class="img-responsive" src="~/Content/Website/images/shop/products/product-3.jpg" alt="product-img" />
-                            <div class="preview-meta">
-                                <ul>
-                                    <li>
-                                        <span data-toggle="modal" data-target="#product-modal">
-                                            <i class="tf-ion-ios-search"></i>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="tf-ion-ios-heart"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href=""><i class="tf-ion-android-cart"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-content">
-                            <h4><a href="product-single.html">Bradley Mid</a></h4>
-                            <p class="price">$200</p>
-                        </div>
-                    </div>
-                </div>
+                }
+
 
             </div>
         </div>
